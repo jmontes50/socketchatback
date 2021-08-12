@@ -11,7 +11,9 @@ const router = require('./routes');
 
 const app = express();
 
-app.use(cors())
+app.use(cors({
+    origin: '*'
+}));
 
 app.use(router);
 
